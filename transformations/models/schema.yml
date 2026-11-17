@@ -1,0 +1,17 @@
+version: 2
+models:
+  - name: stg_current_features
+    columns:
+      - name: feature_key
+        data_tests:
+          - not_null
+          - unique
+      - name: record_hash
+        data_tests:
+          - not_null
+  - name: mart_snapshot_summary
+    columns:
+      - name: snapshot_hash
+        data_tests:
+          - not_null
+          - unique

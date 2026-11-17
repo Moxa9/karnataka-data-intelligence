@@ -1,0 +1,11 @@
+name: karnataka_data_intelligence
+version: "1.0.0"
+config-version: 2
+profile: karnataka_data_intelligence
+model-paths: ["models"]
+models:
+  karnataka_data_intelligence:
+    staging:
+      +materialized: view
+    marts:
+      +materialized: table

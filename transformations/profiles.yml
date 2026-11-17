@@ -1,0 +1,8 @@
+karnataka_data_intelligence:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: ../data/warehouse.duckdb
+      schema: analytics
+      threads: 4
